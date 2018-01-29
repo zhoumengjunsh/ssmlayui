@@ -1,0 +1,36 @@
+package com.papio.yuan.service;
+
+import com.papio.yuan.entity.User;
+
+import java.util.List;
+
+public interface UserService {
+
+        User findUserById(String id);
+        /**
+         * 查询用户分页.
+         */
+        public List findUserList();
+
+        /**
+         * 添加用户信息。
+         *
+         * @param User
+         */
+        public void addUser(User user);
+
+        /**
+         * 删除用户.
+         *
+         * @param ids
+         */
+        public void delUser(String ids);
+
+        /**
+         * 修改用户.
+         *
+         * @param User
+         */
+        public void updateUser(User user);
+
+}
